@@ -72,8 +72,8 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .intro-content p {
-  color: #1e1e1f;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 .pro-img {
@@ -99,6 +99,10 @@ body {
 }
 .skills-list {
   margin: 6px;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #fff;
 }
 
 .skill-image {
@@ -111,6 +115,7 @@ body {
 .skills-desc {
   color: #fff;
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 776px) {
