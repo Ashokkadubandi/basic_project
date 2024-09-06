@@ -61,7 +61,9 @@ let navBtn = document.getElementById("open");
 let closeBtn = document.getElementById("close");
 let mobileNav = document.getElementById("hide");
 let skillsEle = document.getElementById("skills");
-
+let typedText = document.getElementById("type-anim");
+let word = "Hi i am ASHOK";
+let wordIndex = 0;
 const getScrollAction = () => {
   const boxHeight = window.innerHeight / (0.5 * 4);
   const children = skillsEle.children;
@@ -114,3 +116,16 @@ navBtn.onclick = function () {
 closeBtn.onclick = function () {
   mobileNav.classList.toggle("move-right");
 };
+
+const createDynamicText = () => {
+  if (wordIndex < word.length) {
+    typedText.textContent += word[wordIndex];
+    wordIndex++;
+  } else {
+    wordIndex = 0;
+    typedText.textContent = "";
+  }
+  setTimeout(createDynamicText, 200);
+};
+
+createDynamicText();
