@@ -31,6 +31,30 @@ let skillsData = [
     desc:
       "React js is free open source javascript library that developers can make web pages. React js is mainly concerned with rendering elements to th DOM. react js is less codes and more advanced programming,it can holds multiple libraries that are packages, react js is single page application that are easily access content by the process of React-router-dom package",
   },
+  {
+    id: 5,
+    skill: "Node js",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    desc:
+      "Node js is cross-platform that can run on Windows,Linux,Mac os. it is an open source javascript run time environment Node js is enable to create backend projects and restful API. it enable runs javascript code on server side and outside of the web browser.it is a backend application built on v8 javascript engine on chrome.",
+  },
+  {
+    id: 6,
+    skill: "MySQL",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQc8a_3aix3m_fOzVhaMnuGbfFkgNKt8YBzQ&s",
+    desc:
+      "SQL stands for structured query language that is used to store large huge amount of data in tabular form. it is a specialized programming language. by the use of sql we can create tables of user's data and Retrive data,update data,delete data, and manipulate data by giving a commands of query.",
+  },
+  {
+    id: 7,
+    skill: "Python",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DNTvK4N_GDcwh7PeAbCE5Fk3qu6AsclPPA&s",
+    desc:
+      "Python is a computer programming language.it is an interpreted,object-oriented,high-level programming language with dynamic semantics,combined with dynamic typing and dynamic binding make it very attractive for Rapid application development.",
+  },
 ];
 
 let navBtn = document.getElementById("open");
@@ -51,7 +75,7 @@ const getScrollAction = () => {
   });
 };
 
-getScrollAction();
+// getScrollAction();
 
 window.addEventListener("scroll", getScrollAction);
 
