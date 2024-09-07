@@ -64,6 +64,7 @@ let skillsEle = document.getElementById("skills");
 let typedText = document.getElementById("type-anim");
 let word = "Hi i am ASHOK";
 let wordIndex = 0;
+let is_repeat = false;
 const getScrollAction = () => {
   const boxHeight = window.innerHeight / (0.5 * 4);
   const children = skillsEle.children;
@@ -118,12 +119,17 @@ closeBtn.onclick = function () {
 };
 
 const createDynamicText = () => {
-  if (wordIndex < word.length) {
-    typedText.textContent += word[wordIndex];
+  let slicer = word.slice(0, wordIndex);
+  if (wordIndex <= word.length && is_repeat === false) {
+    typedText.textContent = slicer;
     wordIndex++;
   } else {
-    wordIndex = 0;
-    typedText.textContent = "";
+    is_repeat = true;
+    wordIndex--;
+    typedText.textContent = slicer;
+    if (wordIndex === 0) {
+      is_repeat = false;
+    }
   }
   setTimeout(createDynamicText, 200);
 };
