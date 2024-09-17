@@ -48,7 +48,11 @@ body {
 .sections {
   background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 150vh;
+  padding-top: 25%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 .card-as {
   width: 90%;
