@@ -46,18 +46,9 @@ body {
   align-items: center;
 }
 .sections {
-  position: relative;
-  padding-top: 20%;
-  padding-bottom: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  overflow-x: hidden;
-  background-size: cover;
+  height: 100vh;
 }
 .card-as {
   width: 90%;
